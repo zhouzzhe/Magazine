@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 60px 100px;
+  margin-bottom: 30px;
+  gap: 30px;
+  font-size: 1.3rem;
+  border-top: 1px solid var(--deepgray);
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  gap: 0.5rem;
+}
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.toolbar-title {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  border-right: 3px solid var(--deepgray);
+  padding-right: 20px;
+}
+.toolbar-tool {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.toolbar-option:not(:last-child) {
+  border-right: 1.5px solid var(--lightgray);
+  padding-right: 20px;
+}
+.footer-submenu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
