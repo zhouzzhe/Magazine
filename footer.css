@@ -1,3 +1,7 @@
+:root {
+  --lightgray: rgba(207, 207, 207, 100%);
+  --deepgray: rgba(110, 110, 110, 100%);
+}
 .footer {
   display: flex;
   flex-direction: row;
@@ -16,24 +20,24 @@
   /* flex-grow: 1; */
   gap: 0.5rem;
 }
-.toolbar {
+.footer-toolbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
 }
-.toolbar-title {
+.footer-toolbar-title {
   font-size: 1.7rem;
   font-weight: bolder;
   border-right: 3px solid var(--deepgray);
   padding-right: 20px;
 }
-.toolbar-tool {
+.footer-toolbar-tool {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-.toolbar-option:not(:last-child) {
+.footer-toolbar-option:not(:last-child) {
   border-right: 1.5px solid var(--lightgray);
   padding-right: 20px;
 }

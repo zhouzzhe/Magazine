@@ -1,0 +1,38 @@
+:root {
+  --lightgray: rgba(207, 207, 207, 100%);
+  --deepgray: rgba(110, 110, 110, 100%);
+}
+.s1{
+  padding: 80px 120px;
+}
+.s1-title{
+  padding: 10px 35px;
+}
+.s1-main{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.s1-main-photo{
+  width: 370px;
+  height: 370px;
+  background-color: var(--deepgray);
+}.s1-main-content{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 25px;
+}
+.s1-main-content-text{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.s1-main-content-text-name{
+  font-size: 4rem;
+  font-weight: 900;
+}
+.s1-main-content-text-intro{
+  font-size: 1.3rem;
+  margin-top: 60px;
+}
