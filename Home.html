@@ -3,41 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <style>
+      @import "./header.css";
+      @import "./footer.css";
+    </style>
     <link rel="stylesheet" href="./Home.css" />
-
     <title>Home</title>
   </head>
 
   <body>
-    <div class="s1">
-      <div class="s1-header">
-        <div id="logo">logo</div>
-        <div class="s1-header-nav">
-          <div class="s1-header-navbar">
-            <div class="s1-header_navbar_opt">Album</div>
-            <div class="s1-header_navbar_opt">Movie</div>
-            <div class="s1-header_navbar_opt">About</div>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="14"
-              viewBox="0 0 36 14"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1.49841 0.5C0.669986 0.5 -0.00158691 1.17157 -0.00158691 2C-0.00158691 2.82843 0.669986 3.5 1.49841 3.5H34.5C35.3284 3.5 36 2.82843 36 2C36 1.17157 35.3284 0.5 34.5 0.5H1.49841ZM1.49841 10.5C0.669986 10.5 -0.00158691 11.1716 -0.00158691 12C-0.00158691 12.8284 0.669986 13.5 1.49841 13.5H34.5C35.3284 13.5 36 12.8284 36 12C36 11.1716 35.3284 10.5 34.5 10.5H1.49841Z"
-                fill="white"
-              />
-            </svg>
+    <div class="header">
+      <div id="logo">logo</div>
+      <div class="header-dropdown">
+        <div class="header-nav">
+          <!-- <div class="header-navbar">
+          <div class="header_navbar_opt">Album</div>
+          <div class="header_navbar_opt">Movie</div>
+          <div class="header_navbar_opt">About</div>
+        </div> -->
+          <div class="header-menu" id="bar1"></div>
+          <div class="header-menu" id="bar2"></div>
+          <div class="header-menu" id="bar3"></div>
+          <div class="header-dropdown-list">
+            <a href="#">Album</a>
+            <a href="#">About</a>
           </div>
         </div>
       </div>
+    </div>
+    <div class="s1">
       <div class="s1-content">
         <div class="s1-content-main">
           <div class="s1-content-intro">
@@ -50,7 +45,7 @@
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="50"
+                  width="40"
                   height="35"
                   viewBox="0 0 50 35"
                   fill="none"
@@ -339,27 +334,48 @@
     <div class="s4">
       <div class="s4-content">
         <div class="s4-content-intro">
-          <div id="intro_place">台中市外埔區-忘憂谷</div>
-          <div id="intro_date">2021.11.16</div>
-        </div>
-        <div class="s4-content-more">
-          <div id="intro_more">View more</div>
-          <div id="intro_more_icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <path
-                d="M8.5 3.95841L12 6.72925L12.875 7.42196M15.5 9.50008L8.5 15.0417"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <div class="s4-content-intro-left">
+            <div id="intro_place">彰化縣福興鄉-福寶濕地</div>
+            <div id="intro_date">2020.07.06</div>
+          </div>
+          <div class="s4-content-intro-right">
+            <div id="intro_more">View more</div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="35"
+                viewBox="0 0 50 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_283_281)">
+                  <path
+                    d="M41.1458 17.1006L9.89575 17.1006"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M28.542 8.31469L34.8441 12.7072L36.4195 13.8053M41.1462 17.0997L28.542 25.8861"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_283_281">
+                    <rect
+                      width="35"
+                      height="50"
+                      fill="white"
+                      transform="matrix(0 -1 1 0 0 35)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -465,27 +481,72 @@
         <button class="btn">More</button>
       </div>
     </div>
-    <div class="s6">
-      <div class="s6-footer-menu">
-        <div class="s6-toolbar">
-          <div class="s6-toolbar-title">Other</div>
-          <div class="s6-toolbar-tool">
-            <div class="s6-toolbar-option">ALBUM</div>
-            <div class="s6-toolbar-option">MOVIE</div>
-            <div class="s6-toolbar-option">ABOUT</div>
+    <div class="footer">
+      <div class="footer-menu">
+        <div class="footer-toolbar">
+          <div class="footer-toolbar-title">Other</div>
+          <div class="footer-toolbar-tool">
+            <div class="footer-toolbar-option">ALBUM</div>
+            <!-- <div class="footer-toolbar-option">MOVIE</div> -->
+            <div class="footer-toolbar-option">ABOUT</div>
           </div>
         </div>
         <button class="btn">Subscribe</button>
       </div>
-      <div class="s6-footer-submenu">
-        <div class="s6-footer-button">
-          <div>Instagram</div>
-          <div>Mail</div>
+      <div class="footer-submenu">
+        <div class="footer-button">
+          <div class="instagram">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              />
+            </svg>
+            Instagram
+          </div>
+          <div class="mail">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+              />
+            </svg>
+            Mail
+          </div>
         </div>
-        <button id="gotop">TOP</button>
+        <div id="gotop">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="54"
+            height="54"
+            fill="currentColor"
+            class="bi bi-caret-up-square"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path
+              d="M3.544 10.705A.5.5 0 0 0 4 11h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5a.5.5 0 0 0-.082.537"
+            />
+          </svg>
+        </div>
       </div>
     </div>
 
     <script src="./Home.js"></script>
+    <script src="./header.js"></script>
   </body>
 </html>
