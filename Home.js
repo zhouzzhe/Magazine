@@ -123,3 +123,38 @@ function leftSlides3() {
     cardGroup.style.transform += "translateX(490px)";
   }
 }
+
+// 跳轉文章loading
+function loading() {
+  document.querySelector(".overlay").style.opacity = "1";
+  document.querySelector(".overlay").style.zIndex = "2";
+  // document.querySelector(".overlay").style.display = "block";
+  // document.querySelector(".overlay").style.transform = "scale(1)";
+}
+// 跳轉文章1
+var btnPage1 = document.querySelector(".s1-content-intro");
+btnPage1.addEventListener("click", toPage1);
+btnPage1.addEventListener("click", loading);
+function toPage1() {
+  setTimeout('location.href = "page1.html"', 800);
+}
+
+// 跳轉文章2
+var btnPage2 = document.querySelector(".s4-content-intro");
+btnPage2.addEventListener("click", toPage2);
+btnPage2.addEventListener("click", loading);
+function toPage2() {
+  setTimeout('location.href = "page2.html"', 800);
+}
+
+// More按鈕跳轉Album
+var btnMore1 = document.querySelector("#moreAlbum1");
+btnMore1.addEventListener("click", toMore);
+btnMore1.addEventListener("click", loading);
+var btnMore2 = document.querySelector("#moreAlbum2");
+btnMore2.addEventListener("click", toMore);
+btnMore2.addEventListener("click", loading);
+
+function toMore() {
+  setTimeout('location.href="Album.html"', 600);
+}

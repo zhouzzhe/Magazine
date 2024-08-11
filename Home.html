@@ -13,8 +13,9 @@
   </head>
 
   <body>
+    <div class="overlay"></div>
     <div class="header">
-      <div id="logo">logo</div>
+      <div class="logo">logo</div>
       <div class="header-dropdown">
         <div class="header-nav">
           <!-- <div class="header-navbar">
@@ -22,12 +23,14 @@
           <div class="header_navbar_opt">Movie</div>
           <div class="header_navbar_opt">About</div>
         </div> -->
-          <div class="header-menu" id="bar1"></div>
-          <div class="header-menu" id="bar2"></div>
+        <div class="header-menu" id="bar1"></div>
+        <div class="header-menu" id="bar2"></div>
           <div class="header-menu" id="bar3"></div>
           <div class="header-dropdown-list">
-            <a href="#">Album</a>
-            <a href="#">About</a>
+            <div class="Album">Album</div>
+            <div class="About">About</div>
+            <!-- <a href="Album.html">Album</a> -->
+            <!-- <a href="About.html">About</a> -->
           </div>
         </div>
       </div>
@@ -240,7 +243,7 @@
           </div>
         </div>
       </div>
-      <div class="s3-btn">
+      <div class="s3-btn" id="moreAlbum1">
         <button class="btn">More TIME</button>
       </div>
       <div class="card-right-arrow" id="card-right-arrow1">
@@ -478,7 +481,7 @@
         </div>
       </div>
       <div class="s5-button">
-        <button class="btn">More</button>
+        <button class="btn" id="moreAlbum2">More</button>
       </div>
     </div>
     <div class="footer">
@@ -526,7 +529,7 @@
             Mail
           </div>
         </div>
-        <div id="gotop">
+        <a id="gotop" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="54"
@@ -542,11 +545,12 @@
               d="M3.544 10.705A.5.5 0 0 0 4 11h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5a.5.5 0 0 0-.082.537"
             />
           </svg>
-        </div>
+        </a>
       </div>
     </div>
 
     <script src="./Home.js"></script>
     <script src="./header.js"></script>
+    <script src="./footer.js"></script>
   </body>
 </html>

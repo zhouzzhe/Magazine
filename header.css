@@ -1,13 +1,14 @@
 :root {
   --lightgray: rgba(207, 207, 207, 100%);
   --deepgray: rgba(110, 110, 110, 100%);
-  --headergray: rgba(43, 43, 43, 0.25)
+  --headergray: rgba(43, 43, 43, 0.25);
 }
 html,
 body {
   padding: 0px;
   margin: 0px;
   position: relative;
+  cursor: default;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -31,8 +32,8 @@ body {
   height: 30px;
   font-size: 0.95rem;
 }
-.btn:hover{
-  transition:0.5s linear;
+.btn:hover {
+  transition: 0.5s linear;
   cursor: pointer;
   background-color: var(--lightgray);
   color: black;
@@ -63,10 +64,11 @@ body {
   box-shadow: 0px 2px 8px 0px var(--deepgray);
   z-index: 1;
   right: 5px;
-  top: 60px;
+  top: 57px;
   border-radius: 15px;
+  font-size: 1.2rem;
 }
-.header-dropdown-list a{
+.header-dropdown-list div {
   display: block;
   width: 80px;
   padding: 10px 15px;
@@ -74,15 +76,14 @@ body {
   justify-content: center;
   color: black;
 }
-.header-dropdown-list a:hover {
+.header-dropdown-list div:hover {
   background-color: rgb(134, 134, 134);
   border-radius: 15px;
   color: white;
 }
-.header-dropdown-list a:any-link {
+.header-dropdown-list div:any-link {
   text-decoration: none;
 }
-
 
 .header-nav {
   display: inline-block;
@@ -100,10 +101,11 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
 }
-#logo {
+.logo {
   font-size: 36px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 #bar1,
 #bar2,
@@ -122,4 +124,17 @@ body {
 }
 .change #bar3 {
   transform: translate(0, -11px) rotate(45deg);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: 0.3s linear;
+  z-index: -1;
+  opacity: 0;
+  /* display: none; */
+  /* transform: scale(0); */
 }
