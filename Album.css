@@ -12,6 +12,7 @@
   font-weight: 700;
   text-align: center;
   border-bottom: 5px solid black;
+  letter-spacing: 0.3rem;
 }
 .s1-cardgroup {
   display: flex;
@@ -33,6 +34,9 @@
   writing-mode: vertical-lr;
   border-bottom: 3px solid black;
   padding: 30px 0px;
+  font-size: 1.2rem;
+  padding-right: 1px;
+  margin-top: 5px;
 }
 .s1-card-main {
   display: flex;
@@ -40,14 +44,58 @@
   gap: 5px;
   /* margin-bottom: 5px; */
 }
-.s1-card-main-text {
+.s1-card-main-text{
+  font-size: 1.2rem;
+  margin-left: 1.3rem;
 }
 .s1-card-main-photo {
-  width: 350px;
-  height: 350px;
+  width: 440px;
+  height: 247px;
   padding: 10px;
   background-color: var(--deepgray);
 }
 .s1-card-main-decor {
   border-bottom: 3px solid black;
+}
+/* 台南圖書總館 */
+#album-photo1{
+  background-image: url("./img/page3/photo1.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+/* 嘉義縣阿里山 */
+#album-photo2{
+  background-image: url("./img/page2/photo11.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+/* 臺東縣都蘭村 */
+#album-photo3{
+  background-image: url("./img/page1/photo1.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+/* 東海大學 */
+#album-photo4{
+  background-image: url("./img/page4/photo3.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+/* 台中市外埔區 */
+#album-photo5{
+  background-image: url("./img/page5/photo3.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+/* 鵝鑾鼻公園 */
+#album-photo6{
+  background-image: url("./img/page6/photo2.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+/* 福寶溼地、日月潭 */
+#album-photo7{
+  background-image: url("./img/page7/photo5.jpg");
+  background-size: cover;
+  cursor: pointer;
 }

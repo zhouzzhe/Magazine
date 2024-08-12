@@ -1,17 +1,18 @@
 // 第一組照片
-var i = 0;
 
 document
   .querySelector("#card-right-arrow1")
   .addEventListener("click", rightSlides1);
+
+var i = 0;
 
 function rightSlides1() {
   var cardGroup = document.querySelector("#card-photo-group1");
   var maxClicks = cardGroup.querySelectorAll("div").length;
   if (i <= maxClicks - 1) {
     i++;
+    console.log(i);
   }
-  console.log(i);
 
   if (i > maxClicks - 1) {
     document.querySelector("#card-right-arrow1").disabled = true;
@@ -29,11 +30,14 @@ function leftSlides1() {
   var maxClicks = cardGroup.querySelectorAll("div").length;
   if (i > 0) {
     i--;
+    console.log(i);
   }
-  console.log(i);
 
-  if (i <= 0) {
+  if (i < 0) {
     document.querySelector("#card-left-arrow1").disabled = true;
+  } else if (i == 0) {
+    document.querySelector("#card-left-arrow1").disabled = true;
+    cardGroup.style.transform = "translateX(0px)";
   } else {
     document.querySelector("#card-right-arrow1").disabled = false;
     cardGroup.style.transform += "translateX(490px)";
@@ -74,8 +78,11 @@ function leftSlides2() {
   }
   console.log(j);
 
-  if (j <= 0) {
+  if (j < 0) {
     document.querySelector("#card-left-arrow2").disabled = true;
+  } else if (j == 0) {
+    document.querySelector("#card-left-arrow2").disabled = true;
+    cardGroup.style.transform = "translateX(0px)";
   } else {
     document.querySelector("#card-right-arrow2").disabled = false;
     cardGroup.style.transform += "translateX(490px)";
@@ -95,7 +102,7 @@ function rightSlides3() {
   if (k <= maxClicks - 1) {
     k++;
   }
-  console.log(i);
+  console.log(k);
 
   if (k > maxClicks - 1) {
     document.querySelector("#card-right-arrow3").disabled = true;
@@ -116,8 +123,11 @@ function leftSlides3() {
   }
   console.log(k);
 
-  if (k <= 0) {
+  if (k < 0) {
     document.querySelector("#card-left-arrow3").disabled = true;
+  } else if (k == 0) {
+    document.querySelector("#card-left-arrow3").disabled = true;
+    cardGroup.style.transform = "translateX(0px)";
   } else {
     document.querySelector("#card-right-arrow3").disabled = false;
     cardGroup.style.transform += "translateX(490px)";
@@ -131,20 +141,20 @@ function loading() {
   // document.querySelector(".overlay").style.display = "block";
   // document.querySelector(".overlay").style.transform = "scale(1)";
 }
-// 跳轉文章1
-var btnPage1 = document.querySelector(".s1-content-intro");
-btnPage1.addEventListener("click", toPage1);
-btnPage1.addEventListener("click", loading);
-function toPage1() {
-  setTimeout('location.href = "page1.html"', 800);
+// 跳轉文章7
+var btnPage7 = document.querySelector(".s1-content-intro");
+btnPage7.addEventListener("click", toPage7);
+btnPage7.addEventListener("click", loading);
+function toPage7() {
+  setTimeout('location.href = "page7.html"', 800);
 }
 
-// 跳轉文章2
-var btnPage2 = document.querySelector(".s4-content-intro");
-btnPage2.addEventListener("click", toPage2);
-btnPage2.addEventListener("click", loading);
-function toPage2() {
-  setTimeout('location.href = "page2.html"', 800);
+// 跳轉文章5
+var btnPage5 = document.querySelector(".s4-content-intro");
+btnPage5.addEventListener("click", toPage5);
+btnPage5.addEventListener("click", loading);
+function toPage5() {
+  setTimeout('location.href = "page5.html"', 800);
 }
 
 // More按鈕跳轉Album
@@ -157,4 +167,12 @@ btnMore2.addEventListener("click", loading);
 
 function toMore() {
   setTimeout('location.href="Album.html"', 600);
+}
+
+// Random 跳轉page4
+var btnRandom1 = document.querySelector("#random-photo1")
+btnRandom1.addEventListener('click', toPage4)
+btnRandom1.addEventListener('click', loading)
+function toPage4() {
+  setTimeout('location.href="page4.html"', 600);
 }

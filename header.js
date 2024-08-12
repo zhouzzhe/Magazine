@@ -14,8 +14,11 @@ function hide() {
   menu.style.display = "none";
 }
 // menu跳頁
+var btnHome = document.querySelector(".Home");
 var btnAlbum = document.querySelector(".Album");
 var btnAbout = document.querySelector(".About");
+btnHome.addEventListener("click", toHome);
+btnHome.addEventListener("click", loading);
 btnAlbum.addEventListener("click", toAlbum);
 btnAlbum.addEventListener("click", loading);
 btnAbout.addEventListener("click", toAbout);
@@ -43,3 +46,9 @@ btnLogo.addEventListener("click", loading);
 function toHome() {
   setTimeout('location.href="Home.html"', 600);
 }
+
+
+// aboutMore 跳轉到About頁面
+var btnAboutMore = document.querySelector(".s3-content-main-btn")
+btnAboutMore.addEventListener('click',toAbout)
+btnAboutMore.addEventListener('click',loading)

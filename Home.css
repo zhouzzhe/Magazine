@@ -92,11 +92,6 @@ body {
   color: white;
   font-size: 1.2rem;
 }
-#logo {
-  font-size: 36px;
-  margin-left: auto;
-  margin-right: auto;
-}
 .s2 {
   display: flex;
   padding: 20px 0px;
@@ -254,6 +249,69 @@ body {
   height: 270px;
   background-color: gray;
 }
+/* 臺東縣都蘭村 */
+#s3-group1-photo1{
+  background-image: url("./img/page1/photo1.JPG");
+  background-size: cover;
+}
+#s3-group1-photo2{
+  background-image: url("./img/page1/photo2.JPG");
+  background-size: cover;
+}
+#s3-group1-photo3{
+  background-image: url("./img/page1/photo3.JPG");
+  background-size: cover;
+}
+#s3-group1-photo4{
+  background-image: url("./img/page1/photo4.JPG");
+  background-size: cover;
+}
+#s3-group1-photo5{
+  background-image: url("./img/page1/photo5.JPG");
+  background-size: cover;
+}
+#s3-group2-photo1{
+  background-image: url("./img/page2/photo1.JPG");
+  background-size: cover;
+}
+/* 嘉義縣阿里山 */
+#s3-group2-photo2{
+  background-image: url("./img/page2/photo2.JPG");
+  background-size: cover;
+}
+#s3-group2-photo3{
+  background-image: url("./img/page2/photo3.JPG");
+  background-size: cover;
+}
+#s3-group2-photo4{
+  background-image: url("./img/page2/photo4.JPG");
+  background-size: cover;
+}
+#s3-group2-photo5{
+  background-image: url("./img/page2/photo5.JPG");
+  background-size: cover;
+}
+/* 台南圖書總館 */
+#s3-group3-photo1{
+  background-image: url("./img/page3/photo1.JPG");
+  background-size: cover;
+}
+#s3-group3-photo2{
+  background-image: url("./img/page3/photo2.JPG");
+  background-size: cover;
+}
+#s3-group3-photo3{
+  background-image: url("./img/page3/photo3.JPG");
+  background-size: cover;
+}
+#s3-group3-photo4{
+  background-image: url("./img/page3/photo4.JPG");
+  background-size: cover;
+}
+#s3-group3-photo5{
+  background-image: url("./img/page3/photo5.JPG");
+  background-size: cover;
+}
 .s3-btn {
   display: flex;
   justify-content: center;
@@ -382,8 +440,29 @@ body {
 .s5-card-photo {
   width: 360px;
   height: 202px;
-  background-color: black;
+  background-color: var(--lightgray);
 }
+#random-photo1{
+  background-image: url("./img/random1.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+#random-photo2{
+  background-image: url("./img/random2.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+#random-photo3{
+  background-image: url("./img/random3.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+#random-photo4{
+  background-image: url("./img/random4.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+
 .s5-card-text {
   text-align: center;
 }
@@ -392,7 +471,7 @@ body {
   justify-content: center;
   margin-top: 18px;
 }
-.s6 {
+/* .s6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -405,7 +484,6 @@ body {
 .s6-footer-menu {
   display: flex;
   flex-direction: column;
-  /* flex-grow: 1; */
   gap: 0.5rem;
 }
 .s6-toolbar {
@@ -439,4 +517,4 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-}
+} */

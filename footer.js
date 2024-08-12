@@ -1,10 +1,17 @@
 // footer跳轉頁面
-var footerBtnAlbum = document.querySelectorAll(".footer-toolbar-option")[0];
-var footerBtnAbout = document.querySelectorAll(".footer-toolbar-option")[1];
+var homeBtnAlbum = document.querySelectorAll(".footer-toolbar-option")[0];
+var footerBtnAlbum = document.querySelectorAll(".footer-toolbar-option")[1];
+var footerBtnAbout = document.querySelectorAll(".footer-toolbar-option")[2];
+homeBtnAlbum.addEventListener("click", toHome);
+homeBtnAlbum.addEventListener("click", loading);
 footerBtnAlbum.addEventListener("click", toAlbum);
 footerBtnAlbum.addEventListener("click", loading);
 footerBtnAbout.addEventListener("click", toAbout);
 footerBtnAbout.addEventListener("click", loading);
+
+function toHome() {
+  setTimeout('location.href="Home.html"', 600);
+}
 
 function toAlbum() {
   setTimeout('location.href = "Album.html"', 600);
