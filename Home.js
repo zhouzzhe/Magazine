@@ -176,3 +176,24 @@ btnRandom1.addEventListener('click', loading)
 function toPage4() {
   setTimeout('location.href="page4.html"', 600);
 }
+// Random 跳轉page5
+var btnRandom2 = document.querySelector("#random-photo2")
+btnRandom2.addEventListener('click', toPage5)
+btnRandom2.addEventListener('click', loading)
+function toPage5() {
+  setTimeout('location.href="page5.html"', 600);
+}
+// Random 跳轉page6
+var btnRandom3 = document.querySelector("#random-photo3")
+btnRandom3.addEventListener('click', toPage6)
+btnRandom3.addEventListener('click', loading)
+function toPage6() {
+  setTimeout('location.href="page6.html"', 600);
+}
+// Random 跳轉page7
+var btnRandom4 = document.querySelector("#random-photo4")
+btnRandom4.addEventListener('click', toPage7)
+btnRandom4.addEventListener('click', loading)
+function toPage7() {
+  setTimeout('location.href="page7.html"', 600);
+}
